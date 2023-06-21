@@ -20,3 +20,15 @@ document.getElementById('btn-rectangle').addEventListener('click',function(){
 
     displayResultTable("Rectangle", areaRectangle);
 })
+
+//Parallelogram
+document.getElementById('btn-parallelogram').addEventListener("click",function(){
+    const parallelogramB = parseFloat(document.getElementById('parallelogram-b').innerText);
+    const parallelogramH = parseFloat(document.getElementById('parallelogram-h').innerText);
+
+    const areaParallelogram = parallelogramB*parallelogramH;
+
+    displayResultTable("Parallelogram", areaParallelogram);
+    
+
+})
