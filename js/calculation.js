@@ -53,3 +53,15 @@ document.getElementById("btn-pentagon").addEventListener("click",function(){
     displayResultTable("Pentagon", areaPentagon);
 
 })
+
+//ellipse
+document.getElementById("btn-ellipse").addEventListener('click',function(){
+    const ellipseA = parseFloat(document.getElementById('ellipse-a').innerText);
+    const ellipseB = parseFloat(document.getElementById('ellipse-b').innerText);
+
+    const areaEllipse = (3.1416* ellipseA*ellipseB).toFixed(2);
+
+    displayResultTable("Ellipse", areaEllipse);
+
+
+})
