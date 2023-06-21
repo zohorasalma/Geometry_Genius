@@ -33,3 +33,23 @@ document.getElementById('btn-parallelogram').addEventListener("click",function()
 })
 
 //Rhombus
+document.getElementById('btn-rhombus').addEventListener("click",function(){
+    const rhombusD1 = parseFloat(document.getElementById('rhombus-d1').innerText);
+    const rhombusD2 = parseFloat(document.getElementById('rhombus-d2').innerText);
+
+    const areaRhombus = 0.5*rhombusD1*rhombusD2;
+
+    displayResultTable("Rhombus", areaRhombus);
+
+})
+
+//Pentagon
+document.getElementById("btn-pentagon").addEventListener("click",function(){
+    const pentagonP = parseFloat(document.getElementById('pentagon-p').innerText);
+    const pentagonB = parseFloat(document.getElementById('pentagon-b').innerText);
+
+    const areaPentagon = 0.5*pentagonB*pentagonP;
+
+    displayResultTable("Pentagon", areaPentagon);
+
+})
