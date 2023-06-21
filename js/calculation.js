@@ -29,6 +29,7 @@ document.getElementById('btn-parallelogram').addEventListener("click",function()
     const areaParallelogram = parallelogramB*parallelogramH;
 
     displayResultTable("Parallelogram", areaParallelogram);
-    
 
 })
+
+//Rhombus
