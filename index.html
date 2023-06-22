@@ -24,7 +24,7 @@
                 </span>
                 </div>
                 <div class="p-2 ms-auto  ">
-                    <button type="button" class="btn btn-primary"
+                    <button id="btn-blog" type="button" class="btn btn-primary"
         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1rem;">
   Blog
 </button>
@@ -39,7 +39,7 @@
         </nav>
 
     </header>
-    <main class="d-flex container-fluid ">
+    <main class="d-flex flex-column flex-md-row container-fluid ">
         <div id="card-container"> 
             <div class="row row-cols-1 row-cols-md-3 g-3 ">
                 <div class="col">
@@ -48,7 +48,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-center fw-bold">Triangle</h5>
                       <p class="card-text text-center">Area (A) = 0.5 <span>&#215;</span> b <span>&#215;</span> h</p>
-                      <div class="d-flex justify-content-center">
+                      <div class="d-flex flex-row justify-content-center">
                         <input id="triangle-b" class="input-field rounded " placeholder="b" type="text">
                       <span class="mx-2">cm</span>
                         <input id="triangle-h" class="input-field rounded" placeholder="h" type="text">
@@ -66,7 +66,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-center fw-bold">Rectangle</h5>
                       <p class="card-text text-center">Area (A) = w <span>&#215;</span> l</p>
-                      <div class="d-flex justify-content-center">
+                      <div class="d-flex flex-row justify-content-center">
                         <input id="rectangle-w" placeholder="w"  class="input-field rounded " type="text">
                       <span class="mx-2">cm</span>
                         <input id="rectangle-l" placeholder="l" class="input-field rounded" type="text">
@@ -159,7 +159,7 @@
             
         </div>
         <div >
-            <div class="card ms-3 h-50" style="width: 20rem;">
+            <div id='card-result' class="card ms-3 h-50" style="width: 20rem;">
                 <div class="card-body">
                   <h6 class="card-subtitle mb-2 text-decoration-underline fw-bold text-center">Area Calculation</h6>
                   

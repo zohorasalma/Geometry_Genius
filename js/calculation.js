@@ -25,7 +25,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
     const rectangleL = getInputValue('rectangle-l');
 
     if (!isNaN(rectangleL) && !isNaN(rectangleW)) {
-        
+
         const areaRectangle = rectangleW * rectangleL;
 
         displayResultTable("Rectangle", areaRectangle);
@@ -83,11 +83,15 @@ document.getElementById("btn-ellipse").addEventListener('click', function () {
 
 })
 
-
+// backgroundColor change 
 document.getElementById("card-container").addEventListener('mouseover', function (event) {
 
     if (event.target.classList.contains('h-100')) {
         event.target.style.backgroundColor = generateRandomClr();
         // console.log(event.target.style.backgroundColor);
     }
+})
+
+document.getElementById("btn-blog").addEventListener("click",function(){
+    window.location.href= "QA.html";
 })
