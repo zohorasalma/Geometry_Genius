@@ -87,3 +87,12 @@ function displayResultTable(shape, result) {
     // let newText = document.createTextNode("New bottom row");
     // newCell.appendChild(newText);
 }
+function generateRandomClr(){
+    let maxVal = 0xFFFFFF;
+    let random = Math.random()*maxVal;
+    let randomVal = Math.floor(random);
+    randomVal = randomVal.toString(16);
+    let randomClr = randomVal.padStart(6,'0');
+    return `#${randomClr.toUpperCase()}`;
+
+}

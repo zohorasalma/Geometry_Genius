@@ -65,3 +65,13 @@ document.getElementById("btn-ellipse").addEventListener('click',function(){
 
 
 })
+
+
+document.getElementById("card-container").addEventListener('mouseover',function(event){
+    
+    if(event.target.classList.contains('h-100'))
+    {
+        event.target.style.backgroundColor = generateRandomClr();
+        // console.log(event.target.style.backgroundColor);
+    }
+})
